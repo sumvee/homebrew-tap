@@ -5,21 +5,21 @@
 class Hl7lens < Formula
   desc "Read, validate, and safely share HL7 v2.x messages"
   homepage "https://github.com/sumvee/hl7lens"
-  version "0.1.2"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sumvee/hl7lens/releases/download/v0.1.2/hl7lens_0.1.2_darwin_amd64.tar.gz"
-      sha256 "c7c464c840ebdb729bd19b67e813e2eec64aa68756674f1b0517dd2501bf04ff"
+      url "https://github.com/sumvee/hl7lens/releases/download/v0.2.0/hl7lens_0.2.0_darwin_amd64.tar.gz"
+      sha256 "4ecdfe659af1b2c037b06ab0821eedbf93c59c6fee064b6aa934d8f873a294fc"
 
       define_method(:install) do
         bin.install "hl7lens"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sumvee/hl7lens/releases/download/v0.1.2/hl7lens_0.1.2_darwin_arm64.tar.gz"
-      sha256 "08ea13d66cf4819bd1b437617e78a4988df12bb638aaa63022d14e7b2a55f680"
+      url "https://github.com/sumvee/hl7lens/releases/download/v0.2.0/hl7lens_0.2.0_darwin_arm64.tar.gz"
+      sha256 "5599034d49b82c37e733b87246181b42fac0352f603008c822d904f98196d5b8"
 
       define_method(:install) do
         bin.install "hl7lens"
@@ -29,15 +29,15 @@ class Hl7lens < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sumvee/hl7lens/releases/download/v0.1.2/hl7lens_0.1.2_linux_amd64.tar.gz"
-      sha256 "5e8523a5098eb633ece3e67adb5ccce705c704ee3ed9b11fa90aba6d8be0ad01"
+      url "https://github.com/sumvee/hl7lens/releases/download/v0.2.0/hl7lens_0.2.0_linux_amd64.tar.gz"
+      sha256 "7a256b0708394c2d3eb6cae87198bd8d9071d598b530e16893aef225f714b016"
       define_method(:install) do
         bin.install "hl7lens"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sumvee/hl7lens/releases/download/v0.1.2/hl7lens_0.1.2_linux_arm64.tar.gz"
-      sha256 "c83866532d229ee06324e16a63afb5b2e09e06a22457b33537b36b494ab57f65"
+      url "https://github.com/sumvee/hl7lens/releases/download/v0.2.0/hl7lens_0.2.0_linux_arm64.tar.gz"
+      sha256 "61c3e282e9dae8216c55ed948d0834d13025669d299d8f30c484fed231dcba6e"
       define_method(:install) do
         bin.install "hl7lens"
       end
